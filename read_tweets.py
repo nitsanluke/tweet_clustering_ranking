@@ -59,8 +59,8 @@ def main():
 	# print "argv 2 - feature file to save"
 
 	TWEETER_FEEDS = [
-		 'nytimes', 'thesun', 'thetimes', 'ap', 'cnn'
-		#'bbcnews', 'cnet', 'msnuk', 'telegraph']
+		 'nytimes', 'thesun', 'thetimes', 'ap', 'cnn',
+		'bbcnews', 'cnet', 'msnuk', 'telegraph'
 		]
 
 	google_model = load_google_word2vec_model()
