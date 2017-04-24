@@ -51,7 +51,10 @@ ACCESS_SECRET = 'vDUE1cCL1n7BLrRKYlGvwQHeKwbF1YX6IrxpkjTs6XQ4l'
 
 BUFFER = 500
 NUMBER_CLUSTERS = 3
-RANK_THRESHOLD = 10000
+RANK_THRESHOLD = {}
+RANK_THRESHOLD[0] = 10000
+RANK_THRESHOLD[1] = 1000
+RANK_THRESHOLD[2] = 1000
 
 TWEETER_FEEDS = [
 	'nytimes', 'thesun', 'thetimes', 'ap', 'cnn',
@@ -197,7 +200,7 @@ def write_tweets(top_tweets, post_file):
 	for i in range(NUMBER_CLUSTERS):
 		# print i, len(top_tweets[i])
 		for tweet in top_tweets[i]:
-			if tweet.posted == False and tweet.weighted_score >= RANK_THRESHOLD:
+			if tweet.posted == False and tweet.weighted_score >= RANK_THRESHOLD[i]:
 				line = str(i) + ',' + str(tweet.id) + ',' + str(tweet.created_at) + ',' + \
 					   str(tweet.weighted_score) + ',' + str(tweet.score) + ',' + str(tweet.retweet_count) + ',' \
 					   + tweet.text.encode('utf8') + '\n'
