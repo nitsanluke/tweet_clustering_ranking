@@ -2,10 +2,10 @@ from twython import Twython
 import time
 
 
-CONSUMER_KEY = 'kCTatb4tsfq5lihQAmHhiKkjO'
-CONSUMER_SECRET = 'K5gx7jzQj7KcgK4sYLdgCANM4ywk7jOhmMGe3kvTX5HYm1W2Ed'
-ACCESS_KEY = '158395360-BhUmfsA3swXtZAaxAKk8XNqEbXsdek4JRvgvZHDh'
-ACCESS_SECRET = 'vDUE1cCL1n7BLrRKYlGvwQHeKwbF1YX6IrxpkjTs6XQ4l'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
 
 twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET)
 # lis = [467020906049835008] ## this is the latest starting tweet id
