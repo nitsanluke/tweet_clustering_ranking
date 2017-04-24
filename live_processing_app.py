@@ -44,10 +44,10 @@ tokens_re = re.compile(r'(' + '|'.join(regex_str) + ')', re.VERBOSE | re.IGNOREC
 emoticon_re = re.compile(r'^' + emoticons_str + '$', re.VERBOSE | re.IGNORECASE)
 number_re = re.compile(r'^' + number_str + '$', re.VERBOSE | re.IGNORECASE)
 
-CONSUMER_KEY = 'kCTatb4tsfq5lihQAmHhiKkjO'
-CONSUMER_SECRET = 'K5gx7jzQj7KcgK4sYLdgCANM4ywk7jOhmMGe3kvTX5HYm1W2Ed'
-ACCESS_TOKEN = '158395360-BhUmfsA3swXtZAaxAKk8XNqEbXsdek4JRvgvZHDh'
-ACCESS_SECRET = 'vDUE1cCL1n7BLrRKYlGvwQHeKwbF1YX6IrxpkjTs6XQ4l'
+CONSUMER_KEY = 'Enter you Key'
+CONSUMER_SECRET = 'Enter you Key'
+ACCESS_TOKEN = 'Enter you Key'
+ACCESS_SECRET = 'Enter you Key'
 
 BUFFER = 500
 NUMBER_CLUSTERS = 3
