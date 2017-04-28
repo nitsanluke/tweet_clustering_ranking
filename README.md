@@ -1,6 +1,6 @@
 # Cluster and Rank Tweets
 
-These scripts download tweets from list of predifined news feeds and cluster them based on similariy and rank most influential tweets.
+These scripts download tweets from list of predifined news feeds and cluster them based on similariy of word2vec features and rank most influential tweets. Essentially an approch to filter relavant tweets
 
 Eg:
 Tweets from 9 news feeds ('nytimes', 'thesun', 'thetimes', 'ap', 'cnn’, 'bbcnews', 'cnet', 'msnuk', 'telegraph') are download every 10mins. Every tweet is preprocessed and the tweet text is transformed into vectors via word2vec model. 
