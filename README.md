@@ -3,8 +3,10 @@
 These scripts download tweets from list of predifined news feeds and cluster them based on similariy and rank most influential tweets.
 
 Eg:
-Tweets from 9 news feeds ('nytimes', 'thesun', 'thetimes', 'ap', 'cnn’, 'bbcnews', 'cnet', 'msnuk', 'telegraph') are download every 10mins. Every tweet is preprocessed and the tweet text is transformed into vectors via word2vec model. Then every tweet is classified into a cluster and every tweet belonging to a cluster is ranked based on a score computed from tweet features. Once the top tweet for every cluster is picked it’s stored into a dictionary and if a tweet score exceeds a predefined threshold it will be written into a cluster-specific file.
-Run script: python live_processing_app.py GoogleNews-vectors-negative300.bin
+Tweets from 9 news feeds ('nytimes', 'thesun', 'thetimes', 'ap', 'cnn’, 'bbcnews', 'cnet', 'msnuk', 'telegraph') are download every 10mins. Every tweet is preprocessed and the tweet text is transformed into vectors via word2vec model. 
+Then every tweet is classified into a cluster and then all tweets belonging to the cluster are ranked based on a score computed from other tweet features (favorited, etc). Once the top tweet for every cluster is determined it’s stored into a dictionary and if a tweet score exceeds a predefined threshold it will be written into a cluster-specific file.
+
+**Run script: python live_processing_app.py GoogleNews-vectors-negative300.bin**
 
 ## Clustering Tweets
 
