@@ -1,4 +1,3 @@
-from twython import Twython
 import time
 
 #########
