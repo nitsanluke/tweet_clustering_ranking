@@ -17,3 +17,10 @@ Tweets from the 9 feeds were downloaded initially and every tweet text is transf
 From the tweets downloaded a Random Forest regression model is trained using the retweet count as a proxy for the importance of a tweet (as a first attempt to quantify the importance of a tweet). This model use other features apart from the tweet text, such as ‘favorited',  'retweeted_status',  'retweeted',  'entities',  'favorite_count',  'possibly_sensitive'. The importance of a tweet is a hard to define phenomenon and it is influenced by many other factors than the tweets itself but the regression model seems to show promising results in actually being able to capture the retweet count trend at least when it’s positive and negative. From the positive results In future, this can be extended to predict future retweet count of a tweet by tracking tweet retweet count and generating a labeled dataset.
  
 
+## Other Source Flies
+
+read_tweets.py - Gives a simple way to read stored tweets from a JSON objests and compute word2vec representation of each tweet text
+
+dowload_tweets.py - Gives a simple way to download tweets from the twitter API and store them in files as JSON objects
+
+*_test.py - samples to test the tweepy  API and the google word2vec model
